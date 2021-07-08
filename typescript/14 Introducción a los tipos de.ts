@@ -20,7 +20,7 @@
 
     let spiderman={
         nombre:'Peter',
-        edad:35
+        edad:30
     };
 
     spiderman={

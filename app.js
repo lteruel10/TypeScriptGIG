@@ -16,7 +16,7 @@
     cualquiercosa2 = hoy;
     var spiderman = {
         nombre: 'Peter',
-        edad: 30
+        edad: 35
     };
     spiderman = {
         nombre: 'Juan',
