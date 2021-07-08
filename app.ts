@@ -1,31 +1,20 @@
 (function () {
-    let mensaje:string ='hola';//este mensaje vive ene este scope....function(){}
-    let numero:number=123;
-    let booleano:boolean=true;
-    let hoy:Date=new Date();
-    
 
-    let cualquiercosa;//evitar trabajar con any
-    cualquiercosa=mensaje;
-    cualquiercosa=booleano;
-    cualquiercosa=numero;
-    cualquiercosa=hoy;
+function getEdad(){
+    return 100+100+300;
+}    
+const nombre="Luis";
+const apellido="Teruel"
+const edad=33;
 
-    let cualquiercosa2:string | number |Date;//una variable con dos tipos... interesante
-    cualquiercosa2=mensaje;
-    //cualquiercosa2=booleano;
-    cualquiercosa2=numero;
-    cualquiercosa2=hoy;
+//const salida=nombre+" "+apellido+" ("+edad+")";
+//console.log(salida);
 
-
-    let spiderman={
-        nombre:'Peter',
-        edad:35
-    };
-
-    spiderman={
-        nombre:'Juan',
-        edad:30
-    };
+//templates literales 
+//const salida=`${nombre} ${apellido} (${edad})`;//son apostorfes
+const salida=`${nombre} 
+${apellido} 
+(${getEdad()})`;//son apostorfes
+console.log(salida)  
 })();//funcion autoinvocada   
 ///let apunta a un espacio en memoria.

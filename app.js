@@ -1,26 +1,16 @@
 "use strict";
 (function () {
-    var mensaje = 'hola'; //este mensaje vive ene este scope....function(){}
-    var numero = 123;
-    var booleano = true;
-    var hoy = new Date();
-    var cualquiercosa; //evitar trabajar con any
-    cualquiercosa = mensaje;
-    cualquiercosa = booleano;
-    cualquiercosa = numero;
-    cualquiercosa = hoy;
-    var cualquiercosa2; //una variable con dos tipos... interesante
-    cualquiercosa2 = mensaje;
-    //cualquiercosa2=booleano;
-    cualquiercosa2 = numero;
-    cualquiercosa2 = hoy;
-    var spiderman = {
-        nombre: 'Peter',
-        edad: 35
-    };
-    spiderman = {
-        nombre: 'Juan',
-        edad: 30
-    };
+    function getEdad() {
+        return 100 + 100 + 300;
+    }
+    var nombre = "Luis";
+    var apellido = "Teruel";
+    var edad = 33;
+    //const salida=nombre+" "+apellido+" ("+edad+")";
+    //console.log(salida);
+    //templates literales 
+    //const salida=`${nombre} ${apellido} (${edad})`;//son apostorfes
+    var salida = nombre + " \n" + apellido + " \n(" + getEdad() + ")"; //son apostorfes
+    console.log(salida);
 })(); //funcion autoinvocada   
 ///let apunta a un espacio en memoria.
