@@ -1,14 +1,22 @@
 "use strict";
 (() => {
-    console.log('inicio');
-    const prom1 = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            reject('se termino el time'), 10000;
+    const retirarDinero = (montoRetirar) => {
+        let dineroActual = 1000;
+        return new Promise((resolve, reject) => {
+            if (montoRetirar > dineroActual) {
+                reject('No hay fondos suficientesxxx');
+            }
+            else {
+                dineroActual -= montoRetirar;
+                resolve(dineroActual);
+            }
         });
-    });
-    prom1
-        .then(mensaje => console.log(mensaje))
-        .catch(err => console.warn(err));
-    console.log('fin');
-    // setTimeout(function() {location.reload()},10000 );
+    };
+    retirarDinero(1500)
+        .then(montoActual => console.log(`me quedad ${montoActual}`))
+        // .catch(err=>console.warn(err));
+        .catch(console.warn); ////mas reducido el codigo woooooooooo
+    setTimeout(function () {
+        location.reload();
+    }, 30000);
 })(); //FUNCION AUTOINVOCADA CON FLECHA
