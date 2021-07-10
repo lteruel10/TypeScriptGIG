@@ -14,6 +14,7 @@ class Avenger{
     this.equipo=equipo;
     this.nombre=nombre;
     this.nombre=nombre;
+    
   }
 }//Avenger*/
 
