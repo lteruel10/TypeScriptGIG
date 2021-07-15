@@ -1,43 +1,18 @@
 (()=>{
-
- /* ///CLASES 
-class Avenger{
-  //nombre:string='sin  nombre';// se deben inicializar en el constructor
-  nombre:string;
-  equipo:string;
-  nombreReal:string;
-  puedePelear:boolean;
-  peleasGanadas:number;
-//constructor
-  constructor(nombre:string,equipo:string){
-    this.nombre=nombre;
-    this.equipo=equipo;
-    this.nombre=nombre;
-    this.nombre=nombre;
-  }
-}//Avenger*/
-
-  ///CLASES 
-  class Avenger{
-    //nombre:string='sin  nombre';// se deben inicializar en el constructor
- /*   nombre:string;
-    equipo:string;
-    nombreReal:string;
-    puedePelear:boolean;
-    peleasGanadas:number;*/
-
-  //constructor
-  constructor(public nombre:string,
-    public equipo:string,
-      public nombreReal?:string,
-      public puedePelear?:boolean,
-      public peleasGanadas:number=0 ){
-   
+    const sumar =(a:number, b:number):number=>{
+        return a+b;
     }
-  }//Avenger
+///sin return xq es una sloa linea de codigo
+    const sumar2 =(a:number, b:number):number=>a+b;
 
-const antman=new Avenger('Batman','Salon de la Justicia');
-console.log(antman);
+    const nombre=():string=>'Hola Luis';
 
-  setTimeout(function() {location.reload()},30000 );
+    const obtenerSalario=():Promise<string>=>{
+        return new Promise((resolve,reject)=>{
+            resolve('Fernando'); 
+
+        });
+    }
+    obtenerSalario().then(a=>console.log(a));
+
     })();//FUNCION AUTOINVOCADA CON FLECHA
